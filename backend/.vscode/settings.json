@@ -1,0 +1,6 @@
+{
+    "python.defaultInterpreterPath": "/Users/yash/Desktop/practise/Houzeful/backend/venv/bin/python",
+    "python.analysis.extraPaths": [
+        "/Users/yash/Desktop/practise/Houzeful/backend/venv/lib/python3.13/site-packages"
+    ]
+}
