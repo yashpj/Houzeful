@@ -1,8 +1,5 @@
-# Fixed nginx configuration for Railway deployment
-# This version doesn't use environment variables in nginx
-
 server {
-    listen 80;
+    listen $PORT;
     server_name localhost;
     
     # Serve React app files
@@ -11,9 +8,6 @@ server {
         index index.html index.htm;
         try_files $uri $uri/ /index.html;
     }
-    
-    # For now, we'll handle API calls in React instead of nginx proxy
-    # This is simpler and more reliable for Railway deployment
     
     # Optional: Add basic security headers
     add_header X-Frame-Options "SAMEORIGIN" always;
